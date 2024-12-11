@@ -45,7 +45,12 @@ export default defineConfig({
       },
       vueTemplate: true,
     }),
-    vueDevTools()
+    vueDevTools(),
+    VitePluginRader({
+      analytics: {
+        id: 'G-RS9YWVY0TF',
+      },
+    }),
   ],
   define: { 'process.env': {} },
   resolve: {

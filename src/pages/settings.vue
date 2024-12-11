@@ -35,27 +35,24 @@
 <script setup>
 import { useSettingsStore } from '@/stores/settings'
 
-// 連結 router 的三種方式
-
-// import {definePage} from 'vue-router/auto'
+// import { definePage } from 'vue-router/auto'
 
 // definePage({
 //   meta: {
-//     title:'設定',
+//     title: '設定',
 //   },
 // })
 
 const settings = useSettingsStore()
 </script>
 
-<!-- lang 中，可寫 yaml 或 json -->
 <!--
 <route lang="json">
-  {
-    meta: {
-      "title": "設定"
-    }
+{
+  "meta": {
+    "title": "設定"
   }
+}
 </route>
 -->
 
