@@ -1,6 +1,6 @@
 <template>
-  <v-app>
-    <v-app-bar>
+  <v-app class="my-background">
+    <v-app-bar class="bg-purple-darken-4">
       <v-container class="d-flex align-center">
         <v-app-bar-title>番茄鐘</v-app-bar-title>
         <v-btn prepend-icon="mdi-home" to="/">首頁</v-btn>
@@ -21,7 +21,7 @@
           component = 動態元件
           is = 要使用的元件
         -->
-         <!-- component ；用 is 判斷渲染誰 -->
+        <!-- component ；用 is 判斷渲染誰 -->
         <keep-alive include="index">
           <component :is="Component"></component>
         </keep-alive>
@@ -30,3 +30,9 @@
   </v-app>
 </template>
 
+<style>
+/* 提升層級 */
+.v-application.my-background {
+  background: purple;
+}
+</style>

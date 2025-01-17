@@ -15,7 +15,7 @@
           @keydown.enter="onInputSubmit"
           @click:append="onInputSubmit"
         ></v-text-field>
-        <v-table>
+        <v-table class="table">
           <thead>
             <tr>
               <th>事項</th>
@@ -112,6 +112,12 @@ const onEditSubmit = (id, i) => {
   confirmEditItem(id)
 }
 </script>
+
+<style>
+.table {
+  background: plum;
+}
+</style>
 
 <route lang="yaml">
 meta:
