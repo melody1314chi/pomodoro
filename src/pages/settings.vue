@@ -5,7 +5,7 @@
         <h1 class="text-center">鈴聲設定</h1>
       </v-col>
       <v-col cols="12">
-        <v-table>
+        <v-table class="table">
           <thead>
             <tr>
               <th>名稱</th>
@@ -60,3 +60,9 @@ const settings = useSettingsStore()
 meta:
   title: 設定
 </route>
+
+<style>
+.table {
+  background: plum;
+}
+</style>
